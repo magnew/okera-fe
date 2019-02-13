@@ -2,7 +2,7 @@ import React from 'react';
 
 export default {
   id: 'root',
-  data: () => (
+  renderer: () => (
     <div>
       <p>
         Root element
@@ -12,7 +12,7 @@ export default {
   children: [
     {
       id: 'badger1',
-      data: () => (
+      renderer: () => (
         <div>
           <p>
             Badger
@@ -22,7 +22,7 @@ export default {
       children: [
         {
           id: 'mushroom1',
-          data: () => (
+          renderer: () => (
             <div>
               <p>
                 Mushroom
@@ -32,7 +32,7 @@ export default {
           children: [
             {
               id: 'snake1',
-              data: () => (
+              renderer: () => (
                 <div>
                   <p>
                     A snake!
@@ -42,7 +42,7 @@ export default {
             },
             {
               id: 'snake2',
-              data: () => (
+              renderer: () => (
                 <div>
                   <p>
                     A snake!
@@ -56,7 +56,7 @@ export default {
     },
     {
       id: 'badger2',
-      data: () => (
+      renderer: () => (
         <div>
           <p>
             badger
@@ -66,7 +66,7 @@ export default {
     },
     {
       id: 'badger3',
-      data: () => (
+      renderer: () => (
         <div>
           <p>
             badger
@@ -76,7 +76,7 @@ export default {
     },
     {
       id: 'badger4',
-      data: () => (
+      renderer: () => (
         <div>
           <p>
             badger
@@ -86,7 +86,7 @@ export default {
       children: [
         {
           id: 'mushroom2',
-          data: () => (
+          renderer: () => (
             <div>
               <p>
                 mushroom!
@@ -96,10 +96,10 @@ export default {
           children: [
             {
               id: 'snake3',
-              data: () => (
+              renderer: () => (
                 <div>
                   <p>
-                    Oooooooo, it's a snake
+                    Oooooooo, its a snake
                   </p>
                 </div>
               ),
